@@ -12,7 +12,7 @@ import br.com.spdata.integracao.repository.AssuntoRepository;
 public class CadastroAssunto {
 	
 	@Autowired
-	AssuntoRepository assuntoRepository;
+	AssuntoRepository assuntoRepository;	
 	
 	@Autowired
 	ModelMapper modelMapper;
