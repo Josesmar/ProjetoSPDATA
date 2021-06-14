@@ -37,6 +37,4 @@ public class Assunto {
 	public void setAtivo(String ativo) {
 		this.ativo = ativo;
 	}	
-
-
 }

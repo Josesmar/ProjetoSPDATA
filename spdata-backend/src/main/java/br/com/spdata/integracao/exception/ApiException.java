@@ -34,7 +34,7 @@ public class ApiException extends ResponseEntityExceptionHandler{
 		
 		RetornoException retornoException = new RetornoException();
 		retornoException.setStatus(status.value());
-		retornoException.setMensagem("Um ou mais campos estão com valóres inválidos!");
+		retornoException.setMensagem("Um ou mais campos estão com valores inválidos!");
 		retornoException.setDataHoraErro(OffsetDateTime.now());
 		retornoException.setErros(errosCampos);
 		
@@ -47,7 +47,7 @@ public class ApiException extends ResponseEntityExceptionHandler{
 		
 		RetornoException retornoException = new RetornoException();
 		retornoException.setStatus(status.value());
-		retornoException.setMensagem("Um ou mais campos da mensagem não está legível. Verifique");
+		retornoException.setMensagem("Um ou mais campos da mensagem não está legível. Verifique!");
 		retornoException.setDataHoraErro(OffsetDateTime.now());
 				
 		return super.handleExceptionInternal(ex, retornoException, headers, status, request);
